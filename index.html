@@ -7,15 +7,68 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="./js/jquery-2.2.4.min.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <title>Index</title>
 </head>
 <body>
-    <header>Promocion Lorem Ipsum 35%</header>
+    <header>Promocion Especial 35%</header>
     <div class="container mw-100" id="main">
-        
-        <div class="img-left" >
+        <img src="./resources/VIRUS1.png" style="
+            position: fixed;
+            width: 10%;
+            opacity: 0.4;
+            right: 10%;
+            top: 10%;
+            z-index: -9999;
+        ">
+
+        <img src="./resources/VIRUS1.png" style="
+            position: fixed;
+            width: 10%;
+            opacity: 0.3;
+            left: 13%;
+            top: 15%;
+            z-index: -9999;
+        ">
+
+        <img src="./resources/VIRUS2.png" style="
+            position: fixed;
+            width: 15%;
+            opacity: 0.3;
+            left: 10%;
+            top: 50%;
+            z-index: -9999;
+        ">
+
+        <img src="./resources/VIRUS3.png" style="
+        position: fixed;
+        width: 6%;
+        opacity: 0.5;
+        left: 40%;
+        top: 40%;
+        z-index: -9999;
+        ">
+
+        <img src="./resources/VIRUS2.png" style="
+        position: fixed;
+        width: 6%;
+        opacity: 0.2;
+        right: 40%;
+        bottom: 10%;
+        z-index: -9999;
+        ">
+
+        <img src="./resources/VIRUS3.png" style="
+        position: fixed;
+        width: 6%;
+        opacity: 0.4;
+        right: 0%;
+        bottom: 2%;
+        z-index: -9999;
+        ">
+
+
+        <div class="img-left">
             <a href="#main"><img src="./resources/logowebsite_180x.png" alt="Virus Off" id="logo-website"></a>
 
             <div class="img-social">
@@ -38,18 +91,13 @@
         </div>
 
         <div class="container mw-90" id="home">
-<!-- 
-            <img src="./resources/VIRUS1.png" alt="" id="virus1" width="150">
-            <img src="./resources/VIRUS1.png" alt="" id="virus2">
-            <img src="./resources/VIRUS1.png" alt="" id="virus3">
-            <img src="./resources/VIRUS2.png" alt="" id="virus4"> -->
 
             <div class="container" style="width: 45%">
                 <img src="./resources/Botella.png" alt="" width="350" id="botella">
             </div>
 
             <div class="container" style="width: 55%;">
-                <p id="p1">Poderoso Desinfectante para tu oficina</p>
+                <p id="p1" class="mast__title">Poderoso Desinfectante para tu oficina</p>
                 <p id="p2">Una vez seco el producto deja una capa protectora de acción prolongada que continúa eliminando Virus y Bacterias.</p>
                 <p id="p3">
                     Conoce más &#8594;
@@ -60,13 +108,13 @@
             </div>
         </div>
 
-        <div id="puntos-venta1">
+        <div id="puntos-venta1" class="mast__title">
             <div style="width: 40%; margin-right: 50px;">
-                <p id="pv1">
+                <p id="pv1" class="mast__title">
                     Virus Off
                 </p>
 
-                <p id="pv2">
+                <p id="pv2" class="mast__title">
                     $ 948.00
                 </p>
 
@@ -233,8 +281,8 @@
                             <p style="font-size: 25px;">Llamanos: <span style="color: #6FB926;">(81) 21380571</span></p>
                         </td>
                         <td style="text-align: right;">
-                            <a class="btn-enviar" href="#promocion" style="background-color: gray;"> Agregar</a>
-                            <a class="btn-enviar" href="#promocion" style="background-color: gray;">Comprar</a>
+                            <a class="btn-enviar" href="#promocion"> Agregar</a>
+                            <a class="btn-enviar" href="#promocion">Comprar</a>
                         </td>
                     </tr>
                 </table>
@@ -244,4 +292,5 @@
     </div>
     <footer> <p> Contacto &copy; 2020, Virus Off </p> </footer>
 </body>
+<script src="./js/index.js"></script>
 </html>
