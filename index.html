@@ -90,14 +90,14 @@
             <a href="#contacto"><img src="./resources/CONTACTO.png" alt="" width="20px"></a>
         </div>
 
-        <div class="container mw-90" id="home">
+        <div class="row" id="home">
 
-            <div class="container" style="width: 45%">
+            <div class="col-5 col-sm-auto col-md-4">
                 <img src="./resources/Botella.png" alt="" width="350" id="botella">
             </div>
 
-            <div class="container" style="width: 55%;">
-                <p id="p1" class="mast__title">Poderoso Desinfectante para tu oficina</p>
+            <div class="col-5 col-sm-auto col-md-6">
+                <p id="p1">Poderoso Desinfectante para tu oficina</p>
                 <p id="p2">Una vez seco el producto deja una capa protectora de acción prolongada que continúa eliminando Virus y Bacterias.</p>
                 <p id="p3">
                     Conoce más &#8594;
@@ -108,13 +108,13 @@
             </div>
         </div>
 
-        <div id="puntos-venta1" class="mast__title">
-            <div style="width: 40%; margin-right: 50px;">
-                <p id="pv1" class="mast__title">
+        <div class="row" id="puntos-venta1">
+            <div class="col-md-4 col-sm-auto col-auto">
+                <p id="pv1">
                     Virus Off
                 </p>
 
-                <p id="pv2" class="mast__title">
+                <p id="pv2">
                     $ 948.00
                 </p>
 
@@ -149,125 +149,136 @@
                 <a class="btn-enviar" href="#">Agregar</a>
 
                 <div class="container" style="margin-top: 20px;">
-                    <p>Servicio a domicilio! &nbsp;&nbsp;&nbsp;&nbsp;  Ver Pruebas de Laboratorio</p>
+                    <p>Servicio a domicilio! &nbsp;&nbsp;&nbsp;&nbsp; Ver Pruebas de Laboratorio</p>
                     <p style="font-size: 25px;">Llamanos: <span style="color: #6FB926;">(81) 21380571</span></p>
                 </div>
             </div>
 
-            <div style="width: 40%;">
-                <embed src="./resources/ficha_tecnica_virus.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="800px" />
-
+            <div class="col-md-5 col-12">
+                <embed src="./resources/ficha_tecnica_virus.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="800px" id="pdf"/>
             </div>
         </div>
 
         <div id="videos">
-            <div class="container" id="video-play">
-                <iframe width="800" height="480" id="video-youtube-playing" src="https://www.youtube.com/embed/jdVE01gdGsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="row">
+                <div class="col-12" id="video-play">
+                    <iframe width="800" height="480" id="video-youtube-playing" src="https://www.youtube.com/embed/jdVE01gdGsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
-
-
-            <div class="container" id="videos-youtube">
-                <img src="./resources/video1.png" alt="" width="250" onclick="changeVideo('https://www.youtube.com/embed/jdVE01gdGsI')">
-                <img src="./resources/video2.png" alt="" width="250" onclick="changeVideo('https://www.youtube.com/embed/O32khi4z6L4')">
+            
+            <div class="row">
+                <div class="col-12" id="videos-youtube">
+                    <img src="./resources/video1.png" alt="" width="250" onclick="changeVideo('https://www.youtube.com/embed/jdVE01gdGsI')">
+                    <img src="./resources/video2.png" alt="" width="250" onclick="changeVideo('https://www.youtube.com/embed/O32khi4z6L4')">
+                </div>
             </div>
         </div>
 
         <div id="mapa">
-            <table>
-                <tr>
-                    <td>
-                        <div style="display: flex;">
-                            <img src="./resources/mapa.png" alt="" width="450">
-                            <div style="margin-left: 10px;">
-                                <p style="font-size: 24px;">
-                                    Puntos de Venta
-                                </p>
-                                <p>
-                                    Encuentra un punto de venta cerca de tí.
-                                </p>
+            <div class="row">
+                <div class="col-md-auto">
+                    <img src="./resources/mapa.png" alt="" id="mapa-img">
+                    <!-- <div style="margin-left: 10px;"> -->
+                </div>
+                <div class="col-md-1 col-12">
+                        <p style="font-size: 24px;">
+                            Puntos de Venta
+                        </p>
+                        <p>
+                            Encuentra un punto de venta cerca de tí.
+                        </p>
+                    <!-- </div> -->
+                        <p style="text-align: center;">
+                            <span class="circle">1</span> <span style="font-weight: bold;">Guadalupe</span> <br>
+                            <span class="circle">2</span> Guadalupe <br>
+                            <span class="circle">3</span> Guadalupe <br>
+                            <span class="circle">4</span> Guadalupe <br>
+                            <span class="circle">5</span> Guadalupe <br>
+                            <span class="circle">6</span> Guadalupe <br>
+                            <span class="circle">7</span> Guadalupe <br>
+                            <span class="circle">8</span> Guadalupe <br>
+                        </p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-md-3">
+                    <img src="./resources/botellas.png" alt="" width="400" id="botellas">
+                </div>
+            </div>
+
+            <div class="row justify-content-start">
                 
-                                <p style="text-align: center; width: 120px;">
-                                    <span class="circle">1</span> <span style="font-weight: bold;">Guadalupe</span> <br>
-                                    <span class="circle">2</span> Guadalupe <br>
-                                    <span class="circle">3</span> Guadalupe <br>
-                                    <span class="circle">4</span> Guadalupe <br>
-                                    <span class="circle">5</span> Guadalupe <br>
-                                    <span class="circle">6</span> Guadalupe <br>
-                                    <span class="circle">7</span> Guadalupe <br>
-                                    <span class="circle">8</span> Guadalupe <br>
-                                </p>
-                            </div>
-                        </div>
-                        <div style="display: flex; margin-top: 10px;">
-                            <img src="./resources/estadio.png" alt="" width="200" style="margin-right: 20px;">
-                            <div>
-                                <span style="font-size: 15px;">Guadalupe</span>
-                                <p style="font-size: 25px;">Estadio BBVA</p>
-                                <table style="vertical-align: middle;">
-                                    <tr>
-                                        <td><img src="./resources/PICT-DIRECC.png" alt=""></td>
-                                        <td>Avenida Pablo Livas 2301, Tolteca, <br> 67170 Guadalupe, N.L., Mexico</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="./resources/PICT-TELEFONO.png" alt="">
-                                        </td>
-                                        <td>
-                                            <p>(81) 21380571</p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <img src="./resources/botellas.png" alt="" width="550">
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="contacto">
-            <img src="./resources/contacto_imagen.png" alt="">
-
-            <div class="container" id="form-contacto">
-                <form >
-                    
-                    <div class="form-group" style="text-align: left;">
-                        <label for="nombreCompleto">Nombre Completo</label>
-                        <input type="email" class="form-control" id="nombreCompleto">
-                    </div>
-                    
-                    <div class="form-row" style="text-align: left;">
-                        <div class="form-group col-md-4">
-                            <label for="correoElectronico">Correo Electronico</label>
-                            <input type="email" class="form-control" id="correoElectronico" required>
-                        </div>
-
-                        <div class="form-group col-md-4" style="text-align: left;">
-                            <label for="ciudad">Ciudad</label>
-                            <input type="text" class="form-control" id="ciudad">
-                        </div>
-
-                        <div class="form-group col-md-4" style="text-align: left;">
-                            <label for="telefono">Telefono</label>
-                            <input type="text" class="form-control" id="telefono" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="text-align: left; margin-bottom:50px;">
-                        <label for="dudas">Dudas / Aclaraciones</label>
-                        <textarea class="form-control" id="dudas" name="dudas"></textarea>
-                    </div>
-
-                    <a href="#contacto" class="btn-enviar">Enviar Informacion</a>
-                </form>
+                <div class="col-12">
+                    <img src="./resources/estadio.png" alt="" width="200" style="margin-right: 20px;">
+                </div>
+                
+                <div class="col-12">
+                    <span style="font-size: 15px;">Guadalupe</span>
+                    <p style="font-size: 25px;">Estadio BBVA</p>
+                        <img src="./resources/PICT-DIRECC.png" alt="">
+                        Avenida Pablo Livas 2301, Tolteca, <br> 67170 Guadalupe, N.L., Mexico
+                        <br><img src="./resources/PICT-TELEFONO.png" alt="">
+                        (81) 21380571
+                </div>
             </div>
         </div>
 
+        <div id="contacto">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="container">
+                        <img src="./resources/contacto_imagen.png" alt="" id="img-contacto">
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8" id="form-contacto">
+                    <div class="container">
+                        
+                        <form >
+                            <div class="form-group" style="text-align: left;">
+                                <label for="nombreCompleto">Nombre Completo</label>
+                                <input type="email" class="form-control" id="nombreCompleto">
+                            </div>
+                            
+                            <div class="form-row" style="text-align: left;">
+                                <div class="form-group col-md-4">
+                                    <label for="correoElectronico">Correo Electronico</label>
+                                    <input type="email" class="form-control" id="correoElectronico" required>
+                                </div>
+        
+                                <div class="form-group col-md-4" style="text-align: left;">
+                                    <label for="ciudad">Ciudad</label>
+                                    <input type="text" class="form-control" id="ciudad">
+                                </div>
+        
+                                <div class="form-group col-md-4" style="text-align: left;">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="text" class="form-control" id="telefono" required>
+                                </div>
+                            </div>
+        
+                            <div class="form-group" style="text-align: left; margin-bottom:50px;">
+                                <label for="dudas">Dudas / Aclaraciones</label>
+                                <textarea class="form-control" id="dudas" name="dudas"></textarea>
+                            </div>
+        
+                            <a href="#contacto" class="btn-enviar">Enviar Informacion</a>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+        </div>
+
         <div id="promocion">
-            <img src="./resources/anuncio.png" alt="">
-            <div class="container" style="text-align: left; width: 60%;">
+            <img src="./resources/anuncio.jpg" alt="" id="img-anuncio">
+            <div class="container" style="text-align: left; width: 60%;" id="promocion-promo">
                 <br>
                 <h2>Promocion mes de Mayo</h2>
                 <p>
@@ -275,17 +286,9 @@
                 </p>
                 <p>Servicio a domicilio!</p>
 
-                <table style="width: 100%;">
-                    <tr>
-                        <td>
                             <p style="font-size: 25px;">Llamanos: <span style="color: #6FB926;">(81) 21380571</span></p>
-                        </td>
-                        <td style="text-align: right;">
                             <a class="btn-enviar" href="#promocion"> Agregar</a>
                             <a class="btn-enviar" href="#promocion">Comprar</a>
-                        </td>
-                    </tr>
-                </table>
             </div>
         </div>
 
