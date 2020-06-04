@@ -59,6 +59,14 @@ header{
         .img-right{
             display: none !important;
         }
+
+        #ficha-tecnica-img{
+            width: 50% !important;
+        }
+}
+
+#ficha-tecnica-img{
+    width: 100%;
 }
 
 #buscanos-en{
