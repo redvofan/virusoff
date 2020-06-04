@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Text_Animation.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -92,41 +93,58 @@
 
         <div class="row" id="home">
 
-            <div class="col-12 col-sm-auto col-md-4">
-                <img src="./resources/Botella.png" alt="" width="350" id="botella">
-            </div>
+            <div class="col-12 col-sm-auto col-md-4 animated">
+                <section class="mast">
+                    <figure class="">
+                        <img src="./resources/Botella.png" alt="" width="100" class="fadein">                       
+                    </figure>                  
+                </section>                                
+            </div> 
 
-            <div class="col-12 col-sm-auto col-md-6">
-                <p id="p1" class="add-anim anim">Virus Off poderoso desinfectante de superficies</p>
-                <p id="p2">Virus Off® poderoso desinfectante de superficies, elaborado con una formula especial cuya
-                    función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. Se aplica sobre
-                    todo tipo de superficies de uso cotidiano como cubiertas, baños, mesas, sillas, chapas, pisos,
-                    etc…</p>
-                <p id="p3">
-                    Conoce más &#8594;
-                </p>
-                <a class="btn-enviar" href="#">
-                    Comprar
-                </a>
+            <div class="col-12 col-sm-auto col-md-6 animated">
+                <section class="mast">
+                    <span class="p1 title-line"><span><p id="p1">Virus Off poderoso desinfectante de superficies</p></span></span>                    
+                    <span class="p1 title-line">
+                        <span>
+                            <p id="p2">Virus Off® poderoso desinfectante de superficies, elaborado con una formula especial cuya
+                                función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. Se aplica sobre
+                                todo tipo de superficies de uso cotidiano como cubiertas, baños, mesas, sillas, chapas, pisos,
+                                etc…</p>
+                        </span>
+                    </span>                    
+                </section> 
+                <span class="title-line">
+                    <span>
+                        <p id="p3">
+                            Conoce más &#8594;
+                        </p>
+                        <a class="btn-enviar" href="#">
+                            Comprar
+                        </a>
+                    </span>
+                </span>                               
             </div>
         </div>
 
         <div class="row" id="puntos-venta1">
-            <div class="col-md-4 col-sm-auto col-auto">
-                <p id="pv1" class="add-anim">
-                    Virus Off
-                </p>
-
-                <p id="pv2" class="add-anim">
-                    $ 948.00
-                </p>
-
-                <p id="pv3">
-                    Virus Off poderoso desinfectante de superficies, elaborado con una fórmula especial cuya función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. <br><br>
-                    Se aplica sobre todo tipo de superficies de uso cotidiano como cubiertas, baños, mesas, sillas, chapas, pisos, etc... una vez seco el producto deja una capa protectora de acción prolongada que continúe eliminando virus y bacterias. <br><br>
-                    La aplicación se realiza antes y después de que los objetos sean expuestos al contacto humano <br><br>
-                    <span style="font-weight: bold;">Contiene: </span> 1 litro de desinfectante
-                </p>
+            <div class="col-md-4 col-sm-auto col-auto animated">
+                <section class="mast">
+                    <span class="p1 title-line">
+                        <span>
+                            <p id="pv1" class="add-anim">
+                                Virus Off
+                            </p>
+                            
+                            <p id="pv2" class="add-anim">
+                                $ 948.00
+                            </p>
+                            
+                            <p id="pv3">
+                                Virus Off poderoso desinfectante de superficies, elaborado con una fórmula especial cuya función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. <br><br>
+                                Se aplica sobre todo tipo de superficies de uso cotidiano como cubiertas, baños, mesas, sillas, chapas, pisos, etc... una vez seco el producto deja una capa protectora de acción prolongada que continúe eliminando virus y bacterias. <br><br>
+                                La aplicación se realiza antes y después de que los objetos sean expuestos al contacto humano <br><br>
+                                <span style="font-weight: bold;">Contiene: </span> 1 litro de desinfectante
+                            </p>
 
                 <div class="container" id="metodos-pago">
                     <div id="metodo-pago1">
@@ -161,6 +179,10 @@
                 <!-- <embed src="./resources/ficha_tecnica_virus.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="800px" id="pdf"/> -->
                 <img src="./resources/ficha_tecnica_virus.png" alt="ficha_tecnica_virus" id="ficha-tecnica-img">
             </div>
+                        
+                    </span>
+                </span>
+            </section>
         </div>
 
         <div id="videos">
@@ -282,9 +304,9 @@
 
         <div id="promocion">
             <img src="./resources/anuncio.jpg" alt="" id="img-anuncio">
-            <div class="container" style="text-align: left; width: 60%;" id="promocion-promo">
+            <div class="container animated" style="text-align: left; width: 60%;" id="promocion-promo">
                 <br>
-                <h2 class="add-anim">Promoción mes de Mayo</h2>
+                <h2>Promoción mes de Mayo</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum tempora eaque libero assumenda minima, vel repellendus totam, sint id pariatur nostrum cumque ea dolores similique quibusdam at, quisquam hic.
                 </p>

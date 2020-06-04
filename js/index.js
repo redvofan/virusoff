@@ -13,25 +13,57 @@ $(document).ready(function(){
     array_virus.push($("#virus6-img")[0]);
 
     setInterval(fallVirus,20);
+
+    $(".fadein").animate({     
+        width: '350px'
+    }, 1100);
 });
 
-$(window).scroll(function(){
-    var scrollTop = $(this).scrollTop();
-    // $(".add-anim")[0].offset().top;
+    
 
-    $(".add-anim").each(function(){
-        var topDistance = $(this).offset().top;
+    
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 120) {	        
+        $("#puntos-venta1").slideDown("slow", function () {});
 
-        if ( (topDistance-250) < scrollTop ) {
-            console.log( $(this).text() + ' was scrolled to the top' );
-            $(this).addClass("anim");
-        }
-        else{
-            $(this).removeClass("anim")
-            $(this).removeClass("anim");
-        }
-    });
+    } else {
+        $("#puntos-venta1").slideUp("slow", function () {});
+    }
+    
+    // if ($(this).scrollTop() > 870) {
+    //     $("#videos").slideDown("slow", function () {});
+
+    // } else {
+    //     $("#videos").slideUp("slow", function () {});
+    // }
+    
+    // if ($(this).scrollTop() > 1470) {
+    //     $("#mapa").slideDown("slow", function () {});
+
+    // } else {
+    //     $("#mapa").slideUp("slow", function () {});
+    // }
+
+    // if ($(this).scrollTop() > 2170) {
+    //     $("#contacto").slideDown("slow", function () {});
+
+    // } else {
+    //     $("#contacto").slideUp("slow", function () {});
+    // }
+    
+    if ($(this).scrollTop() > 2850) {
+        $("#promocion").slideDown("slow", function () {});
+
+    } else {
+        $("#promocion").slideUp("slow", function () {});
+    }
+
 });
+
+
+
+
+
 
 function fallVirus(){
     for (let index = 0; index < array_virus.length; index++) {
@@ -55,17 +87,17 @@ function fallVirus(){
         }
 
         if(position_top > 100){
-            position_top = 0;
+            position_top = -50;
         }    
         
 
         if(right_pos == ""){
-            array_virus[index].style.left = (left_pos+.25) + "%";
+            array_virus[index].style.left = (left_pos+.08) + "%";
         }
         else{
-            array_virus[index].style.right = (right_pos+.35) + "%";
+            array_virus[index].style.right = (right_pos+.15) + "%";
         }
 
-        array_virus[index].style.top = (position_top+1) + "%";
+        array_virus[index].style.top = (position_top+0.3) + "%";
     }
 }
