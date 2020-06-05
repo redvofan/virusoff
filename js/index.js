@@ -15,8 +15,17 @@ $(document).ready(function(){
     setInterval(fallVirus,20);
 
     $(".fadein").animate({     
-        width: '350px'
+        width: '90%'
     }, 1100);
+
+    for (let index = 2; index <= 12; index++) {        
+        $('#pedido_botellas').append('<option value="'+index+'">'+index+' '+'Piezas</option>');
+    }
+
+    $(".navigation-links").click(function(){
+        $(".navigation-links").removeClass("visited");
+        $(this).addClass("visited");
+    });
 });
 
     

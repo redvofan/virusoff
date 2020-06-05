@@ -73,22 +73,20 @@
             <a href="#main"><img src="./resources/logowebsite_180x.png" alt="Virus Off" id="logo-website"></a>
 
             <div class="img-social">
-                <img src="./resources/TWITER.png" alt="">
+                <a href="https://www.instagram.com/virusoff_/" target="_blank"><img src="./resources/INSTAGRAM.png" alt=""></a>
                 <br>
-                <img src="./resources/FACE.png" alt="">
-                <br>
-                <img src="./resources/INSTAGRAM.png" alt="">
+                <a href="https://www.facebook.com/virusoffmx" target="_blank"><img src="./resources/FACE.png" alt=""></a>
                 <br>
                 <img src="./resources/BUSCANOS.png" alt="Buscanos en:">
             </div>
         </div>
 
         <div class="img-right">
-            <a href="#puntos-venta1"><img src="./resources/Comparr.png" alt="" width="20px"></a>
+            <div class="navigation-links" id="link-compra"><a href="#puntos-venta1">Comprar</a></div>
             <br>
-            <a href="#mapa"><img src="./resources/PVENTAS.png" alt="" width="20px"></a>
+            <div class="navigation-links" id="link-pventa"><a href="#mapa">Puntos de Venta</a></div>
             <br>
-            <a href="#contacto"><img src="./resources/CONTACTO.png" alt="" width="20px"></a>
+            <div class="navigation-links" id="link-contacto"><a href="#contacto">Contacto</a></div>
         </div>
 
         <div class="row" id="home">
@@ -103,26 +101,42 @@
 
             <div class="col-12 col-sm-auto col-md-6 animated">
                 <section class="mast">
-                    <span class="p1 title-line"><span><p id="p1">Virus Off poderoso desinfectante de superficies</p></span></span>                    
+                    <span class="p1 title-line">
+                        <span style="margin-top: 50px;">
+                            <p class="p1-p">Virus Off® poderoso</p>
+                        </span>
+                    </span>
                     <span class="p1 title-line">
                         <span>
-                            <p id="p2">Virus Off® poderoso desinfectante de superficies, elaborado con una formula especial cuya
+                            <p class="p1-p">desinfectante</p>
+                        </span>
+                    </span>
+                    <span class="p1 title-line">
+                        <span>
+                            <p class="p1-p">de superficies</p>
+                        </span>
+                    </span>
+                    <span class="p1 title-line">
+                        <span>
+                            <p id="p2">
+                                Virus Off® poderoso desinfectante de superficies, elaborado con una formula especial cuya
                                 función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. Se aplica sobre
                                 todo tipo de superficies de uso cotidiano como cubiertas, baños, mesas, sillas, chapas, pisos,
-                                etc…</p>
+                                etc…
+                            </p>
+                                
+                            <p id="p3">
+                                <br>
+                                Conoce más &#8594;
+                                <br>
+                                <br>
+                                <a class="btn-enviar" href="#">
+                                    Comprar
+                                </a>
+                            </p>
                         </span>
-                    </span>                    
-                </section> 
-                <span class="title-line">
-                    <span>
-                        <p id="p3">
-                            Conoce más &#8594;
-                        </p>
-                        <a class="btn-enviar" href="#">
-                            Comprar
-                        </a>
                     </span>
-                </span>                               
+                </section>
             </div>
         </div>
 
@@ -138,6 +152,11 @@
                             <p id="pv2" class="add-anim">
                                 $ 948.00
                             </p>
+
+                            Presentación <br>
+                            <select class="form-control" name="pedido_botellas" id="pedido_botellas">
+                                <option value="1">1 Pieza</option>
+                            </select>
                             
                             <p id="pv3">
                                 Virus Off poderoso desinfectante de superficies, elaborado con una fórmula especial cuya función es atacar y desintegrar los virus, y matar el 99.9% de las bacterias. <br><br>
@@ -151,19 +170,19 @@
                         <img src="./resources/tarjeta.png" alt=""><br>
                         Tarjeta de credito y debito
                         <br>
-                        <a href="#">Más información</a>
+                        <!-- <a href="#">Más información</a> -->
                     </div>
                     <div id="metodo-pago2">
                         <img src="./resources/efectivo.png" alt=""><br>
                         Efectivo en tiendas
                         <br>
-                        <a href="#">Más información</a>
+                        <!-- <a href="#">Más información</a> -->
                     </div>
                     <div id="metodo-pago3">
                         <img src="./resources/Transferencias.png" alt=""><br>
                         Transferencias Bancarias
                         <br>
-                        <a href="#">Más información</a>
+                        <!-- <a href="#">Más información</a> -->
                     </div>
                 </div>
 
@@ -317,7 +336,16 @@
         </div>
 
     </div>
-    <footer> <p> Contacto &copy; 2020, Virus Off </p> </footer>
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p> Contacto &copy; 2020, Virus Off®</p>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    
 </body>
 <script src="./js/index.js"></script>
 </html>

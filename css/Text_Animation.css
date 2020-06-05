@@ -1,14 +1,14 @@
 .mast {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  /* -webkit-box-align: center; */
+          /* align-items: center; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   max-width: 80em;
   margin: 0 auto;
@@ -24,7 +24,6 @@
   display: block;
   padding-bottom: 0.1em;
   overflow-y: hidden;
-  
 }
 .mast .title-line span {
   position: relative;
