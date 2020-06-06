@@ -1,5 +1,24 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+    font-weight: bold;
+}
+
+
 *{
-    font-family: "Montserrat";
+    font-family: Montserrat;
 }
 body{
     margin: 0;
@@ -17,8 +36,9 @@ header{
 }
 
 @media only screen and (max-width: 748px) {
-        #mapa-img{
+        #map{
             width: 60%;
+            height: 300px;
         }
         #video-youtube-playing{
             width: 420px;
@@ -75,6 +95,10 @@ header{
     font-weight: 900;
 }
 
+.visited > a :hover{
+    text-decoration: none !important;
+}
+
 .navigation-links{
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
@@ -105,6 +129,15 @@ header{
 
 #link-pventa{
     height: 17vh;
+}
+
+#link-contacto{
+    height: 10vh;
+}
+
+#ficha-tecnica-descarga :hover{
+    cursor: pointer;
+    text-decoration-line: underline;
 }
 
 #ficha-tecnica-img{
@@ -176,6 +209,11 @@ header{
 
 #mapa{
     margin-left: 15%;
+}
+
+#map{
+    width: 500px;
+    height: 500px;
 }
 
 #contacto{
@@ -275,7 +313,7 @@ header{
 
 a:link, a:visited {
     text-decoration:none;
-    
+
 }
 
 .btn-enviar:hover{
@@ -293,7 +331,7 @@ footer{
     bottom: 0;
     position: fixed;
     width: 100%;
-    opacity: 50%;
+    opacity: 80%;
 }
 .py-3>p{
     opacity: 200%;
