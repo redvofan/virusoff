@@ -292,6 +292,13 @@ header{
     align-items: unset !important;
 }
 
+.map_selected{
+    font-weight: bold;
+}
+.map_select_cursor{
+    cursor: pointer;
+}
+
 #p2{
     font-size: 20px;
 }

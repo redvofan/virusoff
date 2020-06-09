@@ -39,27 +39,6 @@ $(window).scroll(function () {
         $("#puntos-venta1").slideUp("slow", function () {});
     }
     
-    // if ($(this).scrollTop() > 870) {
-    //     $("#videos").slideDown("slow", function () {});
-
-    // } else {
-    //     $("#videos").slideUp("slow", function () {});
-    // }
-    
-    // if ($(this).scrollTop() > 1470) {
-    //     $("#mapa").slideDown("slow", function () {});
-
-    // } else {
-    //     $("#mapa").slideUp("slow", function () {});
-    // }
-
-    // if ($(this).scrollTop() > 2170) {
-    //     $("#contacto").slideDown("slow", function () {});
-
-    // } else {
-    //     $("#contacto").slideUp("slow", function () {});
-    // }
-    
     if ($(this).scrollTop() > 2850) {
         $("#promocion").slideDown("slow", function () {});
 
