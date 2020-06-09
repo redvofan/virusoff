@@ -164,12 +164,25 @@ var locations = [
 var arrayMarkers = [];
 
 $(document).ready(function(){
-
+    
+    
     for (let index = 0; index < locations.length; index++) {
         let element_loc = locations[index];
         let cadena_html = '<span onclick="SetMap('+index+')" class="map_select_cursor"><span class="circle">'+(index+1)+'</span> <span id="map_'+(index+1)+'">'+element_loc.Titulo+'</span> </span> <br>';
         $("#ubicaciones_mapa_click").append(cadena_html);
     }
+    
+    
+
+    //Esto es para que aparezca seleccionado el primer punto de la lista
+    let infoMarkerSelected = locations[0]
+    
+    $("#direccion_nombre").html(infoMarkerSelected.Nombre);
+    $("#direccion_mapa").html(infoMarkerSelected.Direccion + "<br>" + infoMarkerSelected.Ciudad);
+    $("#direccion_tel").html(infoMarkerSelected.Tel);
+    $("#direccion_titulo").html(infoMarkerSelected.Titulo);
+    $("#map_1").addClass("map_selected");
+
 });
 
 var map, infoWindow;
